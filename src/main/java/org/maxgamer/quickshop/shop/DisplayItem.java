@@ -180,7 +180,9 @@ public abstract class DisplayItem {
     @NotNull
     public static ItemStack createGuardItemStack(@NotNull ItemStack itemStack, @NotNull Shop shop) {
         itemStack = itemStack.clone();
-        //itemStack.setAmount(1);
+
+        itemStack.setAmount(1);
+
         ItemMeta iMeta = itemStack.getItemMeta();
         if (plugin.getConfig().getBoolean("shop.display-item-use-name")) {
             if (iMeta.hasDisplayName()) {

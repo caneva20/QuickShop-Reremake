@@ -229,7 +229,9 @@ public class Util {
      * @return Game StackSize or Custom
      */
     public static int getItemMaxStackSize(@NotNull Material material) {
-        return customStackSize.getOrDefault(material, material.getMaxStackSize());
+        return 2304;
+
+        //return customStackSize.getOrDefault(material, material.getMaxStackSize());
     }
 
     /**
